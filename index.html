@@ -2,15 +2,25 @@
 <html lang="en">
 
 <head>
-	<title>Bob Ross</title>
+	<title>Survey Form</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 
 <body>
-
+	<h1 id="title">
+		Put a title here
+	</h1>
+	<p id="description">
+		Put a description here
+	</p>
+	<form id="survey-form">
+		<label for="name" id="name-label">Name: </label><input type="text" id="name" required>
+		<label for="email" id="email-label">Email: </label><input type="email" id="email" required>
+		<label for="number" id="number-label">Some number: </label><input type="number" id="number" min="1" max="1000000000" required>
+	</form>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 

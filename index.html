@@ -17,10 +17,26 @@
 		Put a description here
 	</p>
 	<form id="survey-form">
+
+		<!-- 	input form fields	 -->
 		<label for="name" id="name-label">Name: </label><input type="text" id="name" placeholder="Enter your name" required> <br>
 		<label for="email" id="email-label">Email: </label><input type="email" id="email" placeholder="Enter your email" required> <br>
 		<label for="number" id="number-label">Some number: </label><input type="number" id="number" min="1" max="1000000000" placeholder="Enter a number" required> <br>
-		
+
+		<!-- 	dropdown form field	 -->
+		<label for="options">Select one:</label>
+		<select name="options" id="dropdown"> 
+			<option value="One">One</option>
+			<option value="Two">Two</option>
+			<option value="Three">Three</option>
+			<option value="Four">Four</option>
+			<option value="Five">Five</option>
+		</select>
+		</input>
+
+
+
+
 	</form>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

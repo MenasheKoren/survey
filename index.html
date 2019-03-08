@@ -24,21 +24,30 @@
 		<label for="number" id="number-label">Some number: </label><input type="number" id="number" min="1" max="1000000000" placeholder="Enter a number" required> <br>
 
 		<!-- 	dropdown form field	 -->
-		<label for="options">Select one:</label>
-		<select name="options" id="dropdown"> 
+		<div>
+			<label for="options">Select one: </label>
+			<select name="options" id="dropdown"> 
 			<option value="One">One</option>
 			<option value="Two">Two</option>
 			<option value="Three">Three</option>
 			<option value="Four">Four</option>
 			<option value="Five">Five</option>
 		</select>
-		</input>
+		</div>
 
-
-
+		<!-- radio buttons -->
+		<div>
+			<label for="letters">Select one: </label>
+			<input type="radio" name="letters" value="a" id="radio-buttons" checked> a<br>
+			<input type="radio" name="letters" value="b" id="radio-buttons"> b<br>
+			<input type="radio" name="letters" value="c" id="radio-buttons"> c<br>
+			<input type="radio" name="letters" value="d" id="radio-buttons"> d<br>
+			<input type="radio" name="letters" value="e" id="radio-buttons"> e
+		</div>
 
 	</form>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 
 </html>

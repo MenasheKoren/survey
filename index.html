@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Survey Form</title>
+	<title>FCC: Survey Form</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="main.css">
@@ -11,61 +11,64 @@
 
 <body>
 	<h1 id="title">
-		Put a title here
+		Pet Survey Form
 	</h1>
 	<p id="description">
-		Put a description here
+		We would like to know about your pets
 	</p>
 	<form id="survey-form">
 
 		<!-- 	input form fields	 -->
-		<label for="name" id="name-label">Name: </label><input type="text" id="name" placeholder="Enter your name" required> <br>
-		<label for="email" id="email-label">Email: </label><input type="email" id="email" placeholder="Enter your email" required> <br>
-		<label for="number" id="number-label">Some number: </label><input type="number" id="number" min="1" max="1000000000" placeholder="Enter a number" required> <br>
+		<fieldset>
+			<legend>Personal Information:</legend>
+			<label for="name" id="name-label">Name: </label><input type="text" id="name" placeholder="Sammy Survey" required> <br>
+			<label for="email" id="email-label">Email: </label><input type="email" id="email" placeholder="name@example.com" required> <br>
+			<label for="number" id="number-label">Age: </label><input type="number" id="number" min="1" max="120" placeholder="18" required>
+		</fieldset>
 
 		<!-- 	dropdown form field	 -->
 		<div>
-			<label for="options">Select one: </label>
+			<label for="options">Do you own one or more pets? </label>
 			<select name="options" id="dropdown"> 
-			<option value="One">One</option>
-			<option value="Two">Two</option>
-			<option value="Three">Three</option>
-			<option value="Four">Four</option>
-			<option value="Five">Five</option>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+			<option value="Someday">Someday</option>
 		</select>
 		</div>
 
 		<!-- radio buttons -->
 		<div>
-			<label for="letters">Select one: </label> <br>
-			<input type="radio" name="letters" value="a" id="radio-buttons" checked> a<br>
-			<input type="radio" name="letters" value="b" id="radio-buttons"> b<br>
-			<input type="radio" name="letters" value="c" id="radio-buttons"> c<br>
-			<input type="radio" name="letters" value="d" id="radio-buttons"> d<br>
-			<input type="radio" name="letters" value="e" id="radio-buttons"> e
+			<label for="amount">How many pets do you own? </label> <br>
+			<input type="radio" name="amount" value="1-2" id="radio-buttons" checked> 1-2<br>
+			<input type="radio" name="amount" value="3-4" id="radio-buttons"> 3-4<br>
+			<input type="radio" name="amount" value="4-5" id="radio-buttons"> 4-5<br>
+			<input type="radio" name="amount" value="5+" id="radio-buttons"> 5+<br>
+			<input type="radio" name="amount" value="none" id="radio-buttons"> none
 		</div>
 
 		<!-- 	checkboxes	 -->
 		<div>
-			<label for="food">Select one:</label><br>
-			<input type="checkbox" name="food" id="checkboxes" value="apple">apple<br>
-			<input type="checkbox" name="food" id="checkboxes" value="banana">banana<br>
-			<input type="checkbox" name="food" id="checkboxes" value="carrot">carrot<br>
-			<input type="checkbox" name="food" id="checkboxes" value="dumpling">dumpling<br>
-			<input type="checkbox" name="food" id="checkboxes" value="eggs">eggs
+			<label for="types">What kind of pet?<br> (Select all that apply"types)</label><br>
+			<input type="checkbox" name="types" id="checkboxes" value="cat">Cat<br>
+			<input type="checkbox" name="types" id="checkboxes" value="dog">Dog<br>
+			<input type="checkbox" name="types" id="checkboxes" value="rabbit">Rabbit<br>
+			<input type="checkbox" name="types" id="checkboxes" value="fish">Fish<br>
+			<input type="checkbox" name="types" id="checkboxes" value="bird">Bird<br>
+			<input type="checkbox" name="types" id="checkboxes" value="other">other
 		</div>
 
 		<!-- 	textarea	 -->
 		<div>
-			<textarea name="comments" id="textarea" placeholder="Put comments here. I don't know why I have to keep telling you what to do. My goodness!" cols="50" rows="10"></textarea>
+			<textarea name="comments" id="textarea" placeholder="Do you think people should have pets?" cols="50" rows="10"></textarea>
 		</div>
 
 		<!-- 	submit button	 -->
 		<div>
-			<input type="submit" id="submit" value="Submit, nu!">
+			<input type="submit" id="submit" value="Submit">
 		</div>
 
 	</form>
+	<footer>This is a Free Code Camp project.</footer>
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
